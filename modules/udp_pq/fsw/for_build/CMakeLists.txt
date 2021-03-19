@@ -31,14 +31,15 @@
  #
  #############################################################################
 
-buildliner_add_app_def(sbn_uio_mbox
-    FILE sbn_uio_mbox
+buildliner_add_app_def(sbn_udp
+    FILE sbn_udp
     SOURCES
-        ${CMAKE_CURRENT_SOURCE_DIR}/../src/sbn_uio_mailbox_if.c
-        ${CMAKE_CURRENT_SOURCE_DIR}/../src/sbn_uio_mailbox_if.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/../src/mailbox_map.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/../src/sbn_udp_if.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/../src/sbn_udp_if.h
         ${CMAKE_CURRENT_SOURCE_DIR}/../src/mailbox_parser.c
         ${CMAKE_CURRENT_SOURCE_DIR}/../src/mailbox_parser.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/../src/sbn_udp_events.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/../src/sbn_udp_if_struct.h
 
     INCLUDES
         ${CMAKE_CURRENT_SOURCE_DIR}/../src/
